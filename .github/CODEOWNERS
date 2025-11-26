@@ -1,2 +1,33 @@
-# Only the Founder can approve changes to core governance
-* @itwahjoedi
+# Codeijoe Proving Ground - Code Owners
+# This file enforces the BDFL Governance model by assigning mandatory reviewers.
+
+# -----------------------------------------------------------
+# GLOBAL DEFAULT
+# Any file not specified below is overseen by Maintainers.
+# -----------------------------------------------------------
+* @codeijoe/maintainers
+
+# -----------------------------------------------------------
+# THE CORE (Constitution)
+# Only the BDFL (Founder) can approve changes to Governance.
+# -----------------------------------------------------------
+GOVERNANCE.md       @itwahjoedi
+CODE_OF_CONDUCT.md  @itwahjoedi
+OWNERSHIP.md        @itwahjoedi
+BRANDING.md         @itwahjoedi
+LICENSE             @itwahjoedi
+
+# -----------------------------------------------------------
+# INFRASTRUCTURE (The "Gatekeeper" Robots)
+# Critical CI/CD workflows. If this breaks, the platform dies.
+# Must be reviewed by the Founder.
+# -----------------------------------------------------------
+.github/            @itwahjoedi
+.github/workflows/  @itwahjoedi
+
+# -----------------------------------------------------------
+# CHALLENGE SPECS (The "Missions")
+# Maintainers can design new challenges, but Founder must sign off.
+# -----------------------------------------------------------
+**/*.test.js        @itwahjoedi @codeijoe/maintainers
+**/README.md        @codeijoe/maintainers

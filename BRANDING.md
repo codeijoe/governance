@@ -1,32 +1,24 @@
-# BRANDING.md — Codeijoe Project
+# Codeijoe™ Brand Guidelines
 
-**Version**: 1.0  
-**Effective Date**: 2025-11-25  
+> **Identity:** The Engineering Proving Ground.
+> **Voice:** Direct, Technical, Stoic (The "Mountain Engineer").
 
-## 1. Brand Identity
+## 1. Usage of Name
+* **Correct:** `Codeijoe™` (Always capitalize C, use ™ symbol on first mention in formal docs).
+* **Incorrect:** `codeijoe`, `CodeIJoe`, `CodeiJoe`.
 
-“**Codeijoe**” is a registered project identifier owned by Indra Wahyudi. It designates a specific open mentorship system built exclusively on the GitHub platform.
+## 2. The Narrative (Our Voice)
+We do not "nurture" or "cuddle". We **validate**.
+* **Avoid:** "Learn together," "Safe space for beginners," "We will help you."
+* **Use:** "Prove your skill," "Pass the gauntlet," "Engineering rigor," "Show me the code."
 
-## 2. Permitted Use
+## 3. Terminology Enforcement
+To maintain the "Proving Ground" atmosphere, strict adherence to these terms is required:
+* ❌ **Mentee** → ✅ **Challenger**
+* ❌ **Mentorship** → ✅ **Challenge** / **Verification**
+* ❌ **Teacher** → ✅ **Reviewer** / **Maintainer**
+* ❌ **Homework** → ✅ **Mission** / **Spec**
 
-- **Forking source code** is permitted under the terms of the Apache License 2.0.
-- **Deployment to non-GitHub platforms** (e.g., GitLab, Bitbucket, internal systems) is allowed, **provided**:
-  - The name “Codeijoe” is **not used** in any form.
-  - No implication of affiliation, endorsement, or continuity is made.
-  - The original LICENSE and copyright notices are retained.
-
-## 3. Prohibited Use
-
-**Replication of the Codeijoe mentorship architecture within GitHub is strictly prohibited**, regardless of naming. This includes, but is not limited to:
-- Creating repositories that mimic the structure, issue templates, or automation of Codeijoe tracks
-- Deploying a “Codeijoe-like” mentorship system under a different GitHub organization
-- Using the same workflow logic (e.g., milestone-based progression, PR review standards) in a public or private GitHub org with the intent to create an alternative instance
-
-**Rationale**: GitHub is the sole official runtime environment for Codeijoe. Any replication within this namespace fragments the mentorship ecosystem, creates user confusion, and constitutes a violation of platform integrity.
-
-## 4. Enforcement
-
-Violations will be addressed through:
-- Immediate rejection of support or collaboration
-- Reporting to GitHub Abuse pursuant to the [Acceptable Use Policies](https://docs.github.com/en/site-policy/acceptable-use-policies)
-- Legal action where trademark rights have been asserted or registered
+## 4. Logo & Visuals
+* Visuals should be minimalist, terminal-inspired (Monospaced fonts), and devoid of unnecessary decoration.
+* Use high-contrast colors (Dark Mode default).
