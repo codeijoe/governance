@@ -1,24 +1,31 @@
-# Codeijoe™ Brand Guidelines
+# Codeijoe™ Brand Identity & Guidelines
 
+> **Tagline:** "Where AI falls short."
 > **Identity:** The Engineering Proving Ground.
-> **Voice:** Direct, Technical, Stoic (The "Mountain Engineer").
+> **Since:** November 5, 2024 (First Commercial Use).
 
-## 1. Usage of Name
-* **Correct:** `Codeijoe™` (Always capitalize C, use ™ symbol on first mention in formal docs).
-* **Incorrect:** `codeijoe`, `CodeIJoe`, `CodeiJoe`.
+## 1. The Core Narrative
+Codeijoe exists to validate the **human edge** in software engineering.
+* **AI (LLMs)** are excellent at syntax and boilerplate.
+* **Engineers** are required for context, architectural decisions, and maintaining legacy systems.
 
-## 2. The Narrative (Our Voice)
-We do not "nurture" or "cuddle". We **validate**.
-* **Avoid:** "Learn together," "Safe space for beginners," "We will help you."
-* **Use:** "Prove your skill," "Pass the gauntlet," "Engineering rigor," "Show me the code."
+**Codeijoe tests for Context & Decision Making.** We do not test for memorized syntax.
 
-## 3. Terminology Enforcement
-To maintain the "Proving Ground" atmosphere, strict adherence to these terms is required:
-* ❌ **Mentee** → ✅ **Challenger**
-* ❌ **Mentorship** → ✅ **Challenge** / **Verification**
-* ❌ **Teacher** → ✅ **Reviewer** / **Maintainer**
-* ❌ **Homework** → ✅ **Mission** / **Spec**
+## 2. Terminology Enforcement (Strict)
+To maintain the high-stakes environment, the following terminology replacement is mandatory across all repos:
 
-## 4. Logo & Visuals
-* Visuals should be minimalist, terminal-inspired (Monospaced fonts), and devoid of unnecessary decoration.
-* Use high-contrast colors (Dark Mode default).
+| BANNED TERM ❌ | REQUIRED TERM ✅ | REASON |
+| :--- | :--- | :--- |
+| **Mentorship** | **Proving Ground / Verification** | We do not hold hands; we test skills. |
+| **Mentee/Student** | **Challenger** | Passive vs. Active mindset. |
+| **Teacher/Mentor** | **Reviewer/Maintainer** | Objective code review, not subjective teaching. |
+| **Homework/Task** | **Mission / Protocol** | Industrial framing over academic framing. |
+
+## 3. Visual & Voice
+* **Tone:** Stoic, Professional, "The Mountain Engineer". No fluff, no excessive emojis.
+* **Logo Usage:** The logo must remain consistent with the minimalist terminal aesthetic.
+
+## 4. Legal & Trademark Usage
+The name **"Codeijoe"** is a common law trademark of **Indra Wahyudi**.
+* On its **first mention in any document**, it must be marked as **Codeijoe™** to assert trademark rights.
+* The logo and visual identity are the exclusive property of the trademark holder and may not be modified without permission.
