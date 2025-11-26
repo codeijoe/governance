@@ -1,15 +1,15 @@
 # Codeijoe™ Brand Identity & Guidelines
 
-> **Tagline:** "Where AI falls short."
+> **Tagline:** "Validate Your Human Edge."
 > **Identity:** The Engineering Proving Ground.
 > **Since:** November 5, 2024 (First Commercial Use).
 
 ## 1. The Core Narrative
-Codeijoe exists to validate the **human edge** in software engineering.
-* **AI (LLMs)** are excellent at syntax and boilerplate.
-* **Engineers** are required for context, architectural decisions, and maintaining legacy systems.
+Codeijoe exists to separate **coders** from **engineers**.
+* **AI (LLMs)** can generate code, but they lack context, accountability, and intuition.
+* **The "Human Edge"** is the ability to make difficult architectural decisions and handle messy, real-world constraints.
 
-**Codeijoe tests for Context & Decision Making.** We do not test for memorized syntax.
+**Codeijoe validates this edge.** We do not test for memorized syntax; we test for engineering judgment.
 
 ## 2. Terminology Enforcement (Strict)
 To maintain the high-stakes environment, the following terminology replacement is mandatory across all repos:
