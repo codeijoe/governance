@@ -1,7 +1,7 @@
 # Codeijoe™ Proving Ground Protocols
 
 > **Status:** Active Enforcement
-> **Identity:** The Engineering Proving Ground. "Where AI falls short."
+> **Identity:** The Engineering Proving Ground. "Validate Your Human Edge."
 > **Legal:** Apache 2.0 (Software) & CC BY-SA 4.0 (Docs)
 
 ## The Proving Ground Philosophy
@@ -9,7 +9,7 @@ Codeijoe is **NOT** a mentorship platform or a coding school. We do not provide 
 
 **Codeijoe is an Automated Engineering Proving Ground.**
 
-We exist to validate the **human edge** in software engineering: Context, Decision Making, and Architectural Judgment.
+In an era of AI-generated code, the value of a developer is no longer syntax—it is judgment. We exist to **validate your human edge**: Context, Decision Making, and Architectural Resilience.
 
 We provide the infrastructure (Challenges, CI/CD Pipelines, and Specs). You provide the code. If your code passes our automated gauntlet and human review, you earn the right to merge—and the proof of competence that comes with it.
 
