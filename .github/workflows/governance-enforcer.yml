@@ -1,0 +1,119 @@
+name: "Codeijoe Governance Enforcer"
+
+# Trigger pada setiap aktivitas PR
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+    branches: [ "main" ]
+
+permissions:
+  pull-requests: write
+  contents: read
+
+jobs:
+  enforce-protocol:
+    name: "🛡️ Protocol & Integrity Check"
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Penting untuk cek history file
+
+      # ========================================================
+      # 1. THE TERMINOLOGY POLICE (Polisi Bahasa)
+      # Memastikan tidak ada mental "gratisan manja" (Mentor/Help Me)
+      # ========================================================
+      - name: Enforce Proving Ground Terminology
+        id: term_check
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          # Daftar kata terlarang (Case Insensitive)
+          BANNED_REGEX="mentorship|mentee|mentor|teacher|student|help me|teach me|guide me"
+          
+          if echo "$TITLE $BODY" | grep -iEq "$BANNED_REGEX"; then
+            echo "::error title=Terminology Violation::Forbidden terms detected. This is a Proving Ground, not a School."
+            echo "violation=true" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+      # ========================================================
+      # 2. THE INTEGRITY GUARD (Anti-Cheat)
+      # Memastikan Challenger tidak mengubah Soal Ujian (Tests)
+      # ========================================================
+      - name: Detect Illegal File Modifications
+        id: integrity_check
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+            .github/**
+            tests/**
+            GOVERNANCE.md
+            BRANDING.md
+            OWNERSHIP.md
+            LICENSE
+            
+      - name: Block Tampering
+        if: steps.integrity_check.outputs.any_changed == 'true'
+        run: |
+          echo "::error title=Platform Integrity Violated::You modified restricted files (tests/ or .github/). Revert these changes immediately."
+          exit 1
+
+      # ========================================================
+      # 3. THE LAWYER (Legal Sign-off)
+      # Memastikan 'Liability Waiver' dicentang di PR Template
+      # ========================================================
+      - name: Verify Liability Waiver
+        id: legal_check
+        env:
+          BODY: ${{ github.event.pull_request.body }}
+        run: |
+          # Mencari string checkbox yang sudah dicentang [x]
+          REQUIRED_AGREEMENT="- \[x\] I accept the Codeijoe Liability Waiver"
+          
+          if ! echo "$BODY" | grep -Fq "$REQUIRED_AGREEMENT"; then
+            echo "::error title=Legal Compliance::You must accept the Liability Waiver in the PR description."
+            echo "legal_missing=true" >> $GITHUB_OUTPUT
+            exit 1
+          fi
+
+      # ========================================================
+      # 4. AUTOMATED REJECTION (The Bouncer)
+      # Bot memberi feedback otomatis jika ada pelanggaran
+      # ========================================================
+      - name: Reject Violation
+        if: failure()
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const termViolation = '${{ steps.term_check.outputs.violation }}' === 'true';
+            const legalMissing = '${{ steps.legal_check.outputs.legal_missing }}' === 'true';
+            
+            let msg = '### 🛑 PROTOCOL VIOLATION DETECTED\n\n';
+            
+            if (termViolation) {
+              msg += '**🚫 Terminology Check Failed:**\n';
+              msg += 'Codeijoe is a **Proving Ground**, not a mentorship program.\n';
+              msg += 'Please remove words like "Mentor", "Mentee", or "Help me" from your PR title/body.\n';
+              msg += '- Use **"Challenger"** instead of Student/Mentee.\n';
+              msg += '- Use **"Reviewer"** instead of Teacher/Mentor.\n\n';
+            }
+            
+            if (legalMissing) {
+               msg += '**⚖️ Legal Check Failed:**\n';
+               msg += 'You strictly must accept the **Liability Waiver**. Update your PR description to check the box: `[x] I accept...`\n\n';
+            }
+            
+            msg += 'Please edit this Pull Request to comply. The automated gate will remain closed until resolved.';
+            
+            await github.rest.issues.createComment({
+              issue_number: context.issue.number,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              body: msg
+            });
+            
+            // Tutup PR otomatis jika pelanggaran berat (opsional, saat ini kita biarkan open tapi fail)
+            // await github.rest.pulls.update({ ... state: 'closed' });
