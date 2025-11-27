@@ -1,34 +1,37 @@
-# Codeijoe Open Mentorship
+# Codeijoe™ Proving Ground Protocols
 
-**GitHub Organization**: [`github.com/codeijoe`](https://github.com/codeijoe)  
-**Founded**: November 5, 2024  
-**Owner**: Indra Wahyudi (`itwahjoedi`)
+> **Status:** Active Enforcement
+> **Identity:** The Engineering Proving Ground. "Validate Your Human Edge."
+> **Legal:** Apache 2.0 (Software) & CC BY-SA 4.0 (Docs)
 
-## Vision
+## The Proving Ground Philosophy
+Codeijoe is **NOT** a mentorship platform or a coding school. We do not provide tutorials, hand-holding, or career counseling.
 
-Codeijoe is an **open mentorship platform built entirely on GitHub**.  
-It treats the GitHub Organization as a **Platform-as-a-Service (PaaS)**, where learning, collaboration, and project management occur exclusively through Issues, Discussions, and Actions.
+**Codeijoe is an Automated Engineering Proving Ground.**
 
-## Core Principles
+In an era of AI-generated code, the value of a developer is no longer syntax—it is judgment. We exist to **validate your human edge**: Context, Decision Making, and Architectural Resilience.
 
-- **Standardization enables scale**: Every mentee operates in a structured repository with identical workflows.
-- **Automation is mandatory**: No manual coordination; everything is driven by GitHub Actions.
-- **Brand integrity is non-negotiable**: The Codeijoe system is exclusive to this organization.
-- **Transparency by default**: All mentorship is public, auditable, and reproducible.
+We provide the infrastructure (Challenges, CI/CD Pipelines, and Specs). You provide the code. If your code passes our automated gauntlet and human review, you earn the right to merge—and the proof of competence that comes with it.
 
-## Governance
+## Repository Structure
+This repository contains the global policies governing the Codeijoe ecosystem:
 
-This project is governed by explicit, versioned policies:
-- [`OWNERSHIP.md`](OWNERSHIP.md) — Declaration of intellectual property
-- [`BRANDING.md`](BRANDING.md) — Rules for permitted and prohibited use
-- [`LICENSE`](LICENSE) — Apache 2.0 for code; all rights reserved for brand and architecture
+* **[GOVERNANCE.md](./GOVERNANCE.md)**: The "Benevolent Dictator" structure and decision-making process.
+* **[CONTRIBUTING.md](./CONTRIBUTING.md)**: The strict rules of engagement for Challengers.
+* **[CODE_OF_CONDUCT.md](./CODE_OF_CONDUCT.md)**: Standards of professional behavior.
+* **[BRANDING.md](./BRANDING.md)**: Identity guidelines and terminology enforcement.
+* **[OWNERSHIP.md](./OWNERSHIP.md)**: IP rights, licensing, and platform integrity rules.
 
-## Warning
+## Legal Disclaimer & Waiver
+**READ CAREFULLY:**
+By interacting with this ecosystem, you acknowledge that all materials and automated feedback are provided **"AS IS"** without warranty of any kind. Codeijoe maintainers are not liable for any direct or indirect damages resulting from the use of this platform. This is an open-source educational environment; use it at your own risk.
 
-Replicating the Codeijoe mentorship architecture **within GitHub**—even under a different name—is **strictly prohibited** and will be treated as a violation of platform integrity.
-
-Forking code for use **outside GitHub** is permitted under the terms of the LICENSE.
+## Contact
+* **Security Issues:** Open a Draft Security Advisory.
+* **Platform Disputes:** File an Issue with label `governance`.
+* **"How do I code this?" questions:** **DO NOT ASK HERE.** StackOverflow exists for that.
 
 ---
-
-© 2024–2025 Indra Wahyudi. All rights reserved.
+**Codeijoe™ Proving Ground.**
+*Established 2024.*
+"Codeijoe" is a common law trademark of **Indra Wahyudi**.
