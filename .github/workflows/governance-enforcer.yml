@@ -55,8 +55,14 @@ jobs:
             OWNERSHIP.md
             LICENSE
             
+      - name: Debug Context (Who am I?)
+        run: |
+          echo "Actor: ${{ github.actor }}"
+          echo "Repository Owner: ${{ github.repository_owner }}"
+
       - name: Block Tampering
-        if: steps.integrity_check.outputs.any_changed == 'true' && github.actor != 'itwahjoedi'
+        # Gunakan contains agar tidak sensitif case (misal ItWahjoedi vs itwahjoedi)
+        if: steps.integrity_check.outputs.any_changed == 'true' && !contains(github.actor, 'itwahjoedi')
         run: |
           echo "::error title=Platform Integrity Violated::You modified restricted files (tests/ or .github/). Revert these changes immediately."
           exit 1
