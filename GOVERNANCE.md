@@ -35,3 +35,5 @@ Major changes (e.g., new language tracks, changing CI/CD logic) must follow the 
 ## 3. Enforcement
 * Automation is the first line of defense. If CI fails, Governance does not apply—the code is simply invalid.
 * Humans only review code that has passed the automated gauntlet.
+
+<!-- BDFL Exemption Test: This change touches a restricted file. -->
