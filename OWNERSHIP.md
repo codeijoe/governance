@@ -21,8 +21,3 @@ The Codeijoe Proving Ground is a simulation of real-world engineering challenges
 * All materials, automated feedback, and code reviews are provided **"AS IS"** without warranty of any kind.
 * The Codeijoe Founder and Maintainers are **NOT LIABLE** for any direct, indirect, incidental, or consequential damages arising from your participation.
 * There is **NO** employment, agency, or contractor relationship established between Codeijoe and any Challenger.
-
-## 5. Platform Integrity
-The Codeijoe Proving Ground architecture—its mission structure, CI/CD logic, and repository scaffolding—is exclusive to `github.com/codeijoe`.
-* **Prohibited:** Replication of this automated ecosystem **within GitHub**, under any name, is strictly prohibited as it fragments the community and creates platform confusion.
-* **Permitted:** Forking code for study, personal portfolio, or use in **non-GitHub environments** (e.g., GitLab, Self-Hosted) is permitted under the stated licenses.

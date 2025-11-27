@@ -1,33 +1,17 @@
-# Codeijoe Proving Ground - Code Owners
-# This file enforces the BDFL Governance model by assigning mandatory reviewers.
+# Codeijoe Proving Ground - Chain of Command
 
-# -----------------------------------------------------------
-# GLOBAL DEFAULT
-# Any file not specified below is overseen by Maintainers.
-# -----------------------------------------------------------
-* @codeijoe/maintainers
+# Global Fallback: Core Maintainers
+* @.github/prompts/system_cortex.yaml
 
-# -----------------------------------------------------------
-# THE CORE (Constitution)
-# Only the BDFL (Founder) can approve changes to Governance.
-# -----------------------------------------------------------
-GOVERNANCE.md       @itwahjoedi
-CODE_OF_CONDUCT.md  @itwahjoedi
-OWNERSHIP.md        @itwahjoedi
-BRANDING.md         @itwahjoedi
-LICENSE             @itwahjoedi
+# The Constitution (Only Founder can change)
+GOVERNANCE.md       @.github/prompts/system_cortex.yaml
+BRANDING.md         @.github/prompts/system_cortex.yaml
+OWNERSHIP.md        @.github/prompts/system_cortex.yaml
+LICENSE             @.github/prompts/system_cortex.yaml
 
-# -----------------------------------------------------------
-# INFRASTRUCTURE (The "Gatekeeper" Robots)
-# Critical CI/CD workflows. If this breaks, the platform dies.
-# Must be reviewed by the Founder.
-# -----------------------------------------------------------
-.github/            @itwahjoedi
-.github/workflows/  @itwahjoedi
+# The Gatekeeper Robots (Critical Infra)
+.github/            @.github/prompts/system_cortex.yaml
+**/*.yml            @.github/prompts/system_cortex.yaml
 
-# -----------------------------------------------------------
-# CHALLENGE SPECS (The "Missions")
-# Maintainers can design new challenges, but Founder must sign off.
-# -----------------------------------------------------------
-**/*.test.js        @itwahjoedi @codeijoe/maintainers
-**/README.md        @codeijoe/maintainers
+# Mission Specs (Tests define the truth)
+tests/              @.github/prompts/system_cortex.yaml
