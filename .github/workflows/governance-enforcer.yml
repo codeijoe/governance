@@ -56,7 +56,7 @@ jobs:
             LICENSE
             
       - name: Block Tampering
-        if: steps.integrity_check.outputs.any_changed == 'true' && github.actor != github.repository_owner
+        if: steps.integrity_check.outputs.any_changed == 'true' && github.actor != 'itwahjoedi'
         run: |
           echo "::error title=Platform Integrity Violated::You modified restricted files (tests/ or .github/). Revert these changes immediately."
           exit 1
