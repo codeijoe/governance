@@ -1,56 +1,47 @@
-# Code of Conduct
+# Codeijoe™ Professional Conduct Protocol
 
-## The "Professional" Clause
-Codeijoe is a simulation of a high-standard engineering environment.
-* **Toxicity is banned:** Harassment, elitism, or discrimination results in an instant ban.
-* **Laziness is discouraged:** Asking questions that can be answered by reading the README is considered noise.
+> **Status:** Active Enforcement
+> **Applicability:** All Repositories, Pull Requests, and Issues.
 
-We are here to build, not to argue.
+## 1. The Core Philosophy
+Codeijoe is not a social club; it is a **Professional Audit Simulation**.
+We value **Integrity** over Comfort, and **Truth** over Politeness.
+
+While we strictly enforce a harassment-free environment, we do not enforce "toxic positivity". Engineering reviews are critical, direct, and factual.
+
+## 2. Standards of Conduct
+
+### ✅ Required Behavior (The Professional)
+* **Accountability:** Own your code. If you make a mistake, admit it and fix it.
+* **Direct Communication:** Be concise. Don't fluff your sentences.
+* **Reasoning:** Explain *why* you made a decision, not just *what* you did.
+* **Respect for Time:** Read the documentation (`README.md`, `CONTRIBUTING.md`) before asking questions.
+
+### ❌ Prohibited Behavior (The Amateur)
+* **AI Spamming:** Submitting unreviewed, auto-generated code just to "pass". This results in an immediate **Permanent Ban**.
+* **Begging for Hints:** Opening Issues asking "How do I solve this?". This is an audit, not a tutorial.
+* **Solution Leaking:** Posting full answers in public discussions. This ruins the proving ground for others.
+* **Harassment:** Any form of sexism, racism, or personal attacks. We have zero tolerance for hate speech.
+
+## 3. The "No Spoon-feeding" Clause
+In the industry, your Senior Engineer is busy.
+* **It is NOT a violation** of this Code of Conduct for a Maintainer to close your Issue with "Read the Manual" or "Debug it yourself."
+* This is not hostility; this is the **Standard of Independence** we are testing for.
+
+## 4. Enforcement Strategy
+
+### The "One Strike" Policy for Integrity
+* **Cheating / AI Spam / Tempering with Tests:** Immediate Ban. No appeal.
+
+### The "Three Strike" Policy for Behavior
+* **Unprofessional Conduct (Trolling/Spamming):**
+    1.  **Warning:** Comment deleted & formal warning.
+    2.  **Suspension:** 30-day block from the organization.
+    3.  **Ban:** Permanent expulsion.
+
+## 5. Reporting
+If you witness genuine harassment or abuse (not just strict code review), report it directly to the Ops Commander at **iw@ijoe.eu.org**.
+* *Note: Complaints about "The test is too hard" or " The bot is mean" will be ignored.*
 
 ---
-# Contributor Covenant Code of Conduct
-
-## Our Pledge
-
-In the interest of fostering an open and welcoming environment, we as contributors and maintainers pledge to making participation in our project and our community a harassment-free experience for everyone, regardless of age, body size, disability, ethnicity, sex, gender identity and expression, level of experience, education, socioeconomic status, nationality, personal appearance, race, religion, or sexual identity and orientation.
-
-## Our Standards
-
-Examples of behavior that contributes to creating a positive environment include:
-
-* Using welcoming and inclusive language
-* Being respectful of differing viewpoints and experiences
-* Gracefully accepting constructive criticism
-* Focusing on what is best for the community
-* Showing empathy towards other community members
-
-Examples of unacceptable behavior by participants include:
-
-* The use of sexualized language or imagery and unwelcome sexual attention or advances
-* Trolling, insulting/derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or electronic address, without explicit permission
-* Other conduct which could reasonably be considered inappropriate in a professional setting
-
-## Our Responsibilities
-
-Project maintainers are responsible for clarifying the standards of acceptable behavior and are expected to take appropriate and fair corrective action in response to any instances of unacceptable behavior.
-
-Project maintainers have the right and responsibility to remove, edit, or reject comments, commits, code, wiki edits, issues, and other contributions that are not aligned to this Code of Conduct, or to ban temporarily or permanently any contributor for other behaviors that they deem inappropriate, threatening, offensive, or harmful.
-
-## Scope
-
-This Code of Conduct applies both within project spaces and in public spaces when an individual is representing the project or its community. Examples of representing a project or community include using an official project e-mail address, posting via an official social media account, or acting as an appointed representative at an online or offline event. Representation of a project may be further defined and clarified by project maintainers.
-
-## Enforcement
-
-Instances of abusive, harassing, or otherwise unacceptable behavior may be reported by contacting the project team at [INSERT EMAIL ADDRESS]. All complaints will be reviewed and investigated and will result in a response that is deemed necessary and appropriate to the circumstances. The project team is obligated to maintain confidentiality with regard to the reporter of an incident. Further details of specific enforcement policies may be posted separately.
-
-Project maintainers who do not follow or enforce the Code of Conduct in good faith may face temporary or permanent repercussions as determined by other members of the project's leadership.
-
-## Attribution
-
-This Code of Conduct is adapted from the [Contributor Covenant][homepage], version 1.4, available at [https://www.contributor-covenant.org/version/1/4/code-of-conduct.html][version]
-
-[homepage]: https://www.contributor-covenant.org
-[version]: https://www.contributor-covenant.org/version/1/4/code-of-conduct.html
+*Adapted for the Codeijoe Audit Authority. This document supersedes the standard Contributor Covenant.*
