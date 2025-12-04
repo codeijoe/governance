@@ -1,25 +1,27 @@
-# Rules of Engagement
+# Rules of Engagement: The Audit Protocol
 
-**Welcome to the Proving Ground.**
-You are here to test your skills, not to be taught.
+**Welcome to the Authority.**
+You are here to validate your Engineering Judgment, not just your syntax.
 
-## The Workflow
-1. **Fork** the Challenge Repository.
-2. **Solve** the problem locally.
-3. **Test** locally. If `npm test` fails locally, **DO NOT** open a PR.
-4. **Submit PR** only when you are confident.
+## 1. The "Human-Only" Workflow
+1. **Fork** the Mission Repository.
+2. **Audit** the codebase. Find the trap (Logic Error, Security Hole, or Performance Bomb).
+3. **Fix** the issue locally.
+4. **Submit PR** to the `main` branch.
 
-## The "Zero-Touch" Policy
+## 2. The Voight-Kampff Rule (CRITICAL)
+Codeijoe uses an automated **Reasoning Check**.
+* We do not care if your code works. We care if you know **WHY** it works.
+* **Mandatory:** In your Pull Request description, you MUST fill out the **"Trade-off Analysis"** section.
+* **Warning:** If you provide a generic AI summary (e.g., "I fixed the bug"), our Gatekeeper Bot will **Auto-Reject** your submission as "AI Slop". Write like an Engineer.
+
+## 3. The "Zero-Touch" Policy
 We utilize aggressive automation.
-* If your PR fails the CI/CD Pipeline (Linter/Tests), it will be **automatically ignored** by humans.
-* Do not tag Maintainers asking "Why did my test fail?". Read the logs. Debugging is part of the challenge.
+* **Fail Fast:** If your PR fails the CI/CD Pipeline (Tests/Linter), it is ignored.
+* **No Spoon-feeding:** Do not open Issues asking "Why did this fail?". Read the logs. Debugging is the test.
 
-## Legal & IP Rights
-By submitting a Pull Request to Codeijoe:
-1. You certify that the code is your original work.
-2. You grant Codeijoe a perpetual, world-wide, royalty-free license to use, display, and distribute your contribution under the **Apache License 2.0**.
-3. You retain moral rights to claim this work in your personal portfolio.
-
-## Prohibited Behavior
-* **Spoilers:** Do not post full solutions in Issues/Discussions.
-* **Begging:** Do not ask for easy passes or manual fixes.
+## 4. Legal & IP Rights
+By submitting a Pull Request:
+1.  You certify that the logic is your own.
+2.  You grant Codeijoe a license to use your submission for data analysis.
+3.  You retain moral rights to use this work in your portfolio.
