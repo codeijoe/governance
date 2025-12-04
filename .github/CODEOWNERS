@@ -1,0 +1,17 @@
+# Codeijoe Proving Ground - Chain of Command
+
+# Global Fallback: Core Maintainers
+* @.github/prompts/system_cortex.yaml
+
+# The Constitution (Only Founder can change)
+GOVERNANCE.md       @.github/prompts/system_cortex.yaml
+BRANDING.md         @.github/prompts/system_cortex.yaml
+OWNERSHIP.md        @.github/prompts/system_cortex.yaml
+LICENSE             @.github/prompts/system_cortex.yaml
+
+# The Gatekeeper Robots (Critical Infra)
+.github/            @.github/prompts/system_cortex.yaml
+**/*.yml            @.github/prompts/system_cortex.yaml
+
+# Mission Specs (Tests define the truth)
+tests/              @.github/prompts/system_cortex.yaml
